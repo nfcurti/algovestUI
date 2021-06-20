@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body, html{
+font-family: 'Kanit', sans-serif !important;
+}
 .App {
   text-align: center;
 }
@@ -13,6 +17,13 @@
   }
 }
 
+.hShxNi svg {
+    padding-left: 4px;
+    height: 18px;
+    width: auto;
+    fill: rgb(170, 137, 41);
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -22,6 +33,488 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.spin_select{
+  -webkit-box-align: center;
+    align-items: center;
+    background-color: rgb(238, 234, 244);
+    border-radius: 24px;
+    box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+    cursor: pointer;
+    display: inline-flex;
+    height: 40px;
+    position: relative;
+    transition: background-color 200ms ease 0s;
+    width: 72px;
+}
+
+.spin_select input{
+      cursor: pointer;
+    opacity: 0;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+}
+
+.spin_select div{
+      background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    cursor: pointer;
+    height: 32px;
+    left: 4px;
+    position: absolute;
+    top: 4px;
+    transition: left 200ms ease-in 0s;
+    width: 32px;
+    z-index: 1;
+}
+
+.spin_text{
+  color: rgb(69, 42, 122);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-left:8px;
+}
+
+.con_staking{
+  display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.header_h1{
+  color: rgb(170, 137, 41);
+  font-size: 24px;
+  font-weight: 700;
+  margin-top:2em;
+  margin-bottom:1em;
+}
+
+.cqrcSX {
+    background-color: rgb(143, 128, 186);
+    height: 1px;
+    margin: 0px auto 32px;
+    width: 100%;
+    margin-top: 2em
+}
+
+.farm_box{
+  align-self: baseline;
+    background: rgb(255, 255, 255);
+    border-radius: 32px;
+    box-shadow: rgb(25 19 38 / 10%) 0px 2px 12px -8px, rgb(25 19 38 / 5%) 0px 1px 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 24px;
+    position: relative;
+    text-align: center;
+    min-width: 280px;
+    max-width: 31.5%;
+    width: 100%;
+    margin: 0px 8px 32px;
+}
+
+.farm_name_box{
+  display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.final_name{
+  color: rgb(69, 42, 122);
+    margin-bottom: 4px;
+  font-size: 20px;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+.farm_banner_box{
+  position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 64px;
+    max-width: 64px;
+    max-height: 64px;
+    width: 100%;
+    padding-top: 0%;
+}
+
+.final_banner{
+  position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+}
+
+.farm_name{
+  display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.farm_box_bg{
+  filter: blur(6px);
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    z-index: -1;
+    background: linear-gradient(45deg, rgb(255, 0, 0) 0%, rgb(255, 154, 0) 10%, rgb(208, 222, 33) 20%, rgb(79, 220, 74) 30%, rgb(63, 218, 216) 40%, rgb(47, 201, 226) 50%, rgb(28, 127, 238) 60%, rgb(95, 21, 242) 70%, rgb(186, 12, 248) 80%, rgb(251, 7, 217) 90%, rgb(255, 0, 0) 100%) 0% 0% / 300% 300%;
+    animation: 2s linear 0s infinite normal none running ilqnTz;
+    border-radius: 16px;
+}
+
+.fees_box{
+  display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.fees{
+      -webkit-box-align: center;
+    align-items: center;
+    background-color: transparent;
+    border: 2px solid rgb(49, 208, 170);
+    border-radius: 16px;
+    color: rgb(49, 208, 170);
+    display: inline-flex;
+    font-size: 14px;
+    font-weight: 400;
+    height: 28px;
+    line-height: 1.5;
+    padding: 0px 8px;
+    white-space: nowrap;
+    margin-right: 0.5em
+}
+
+.multiplier{
+-webkit-box-align: center;
+    align-items: center;
+    background-color: rgb(118, 69, 217);
+    border: 2px solid rgb(118, 69, 217);
+    border-radius: 16px;
+    color: rgb(255, 255, 255);
+    display: inline-flex;
+    font-size: 14px;
+    font-weight: 400;
+    height: 28px;
+    line-height: 1.5;
+    padding: 0px 8px;
+    white-space: nowrap;
+}
+
+.info_row{
+  display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.earnings{
+      color: rgb(118, 69, 217);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-transform: uppercase;
+    padding-right: 3px;
+}
+
+.earnings_box{
+      display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.earnings_box h2{
+      font-size: 20px;
+    font-weight: 600;
+    line-height: 1.1;
+    color: rgb(189, 194, 196);
+}
+
+.earnings_box div{
+  display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.earnings_box button{
+      -webkit-box-align: center;
+    align-items: center;
+    background-color: rgb(170, 137, 41);
+    border: 0px;
+    border-radius: 16px;
+    box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px inset;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    width: max-content;
+    height: 48px;
+    line-height: 1;
+    letter-spacing: 0.03em;
+    -webkit-box-pack: center;
+    justify-content: center;
+    outline: 0px;
+    padding: 0px 24px;
+    transition: background-color 0.2s ease 0s;
+    opacity: 1;
+}
+
+.staking_box div{
+  color: rgb(118, 69, 217);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-transform: uppercase;
+    padding-right: 3px;
+    text-align: initial;
+}
+
+.jYOTaZ{
+  background-color: rgb(233, 234, 235);
+    height: 1px;
+    margin: 28px auto;
+    width: 100%;
+}
+
+.dCVmfN {
+    color: rgb(170, 137, 41);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.bhoBuD {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.bhoBuD svg{
+  fill: rgb(170, 137, 41);
+}
+
+.scan{
+  color: rgb(170, 137, 41);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: fit-content;
+}
+
+.lbtiF svg {
+    fill: rgb(49, 208, 170);
+}
+
+.eSZGEW {
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: transparent;
+    border: 0px;
+    border-radius: 16px;
+    box-shadow: none;
+    color: rgb(170, 137, 41);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    width: max-content;
+    height: 32px;
+    line-height: 1;
+    letter-spacing: 0.03em;
+    -webkit-box-pack: center;
+    justify-content: center;
+    outline: 0px;
+    padding: 0px 16px;
+    transition: background-color 0.2s ease 0s;
+    opacity: 1;
+    margin-left: 4px;
+}
+
+.approve_button{
+  -webkit-box-align: center;
+    align-items: center;
+    background-color: rgb(170, 137, 41);
+    border: 0px;
+    border-radius: 16px;
+    box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px inset;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    height: 48px;
+    line-height: 1;
+    letter-spacing: 0.03em;
+    -webkit-box-pack: center;
+    justify-content: center;
+    outline: 0px;
+    padding: 0px 24px;
+    transition: background-color 0.2s ease 0s;
+    opacity: 1;
+    margin-top: 8px;
+}
+
+.info_row_a{
+  color: rgb(69, 42, 122);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.info_row_b{
+  color: rgb(69, 42, 122);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.logo{
+  margin-left:50%;
+  width:2em;
+}
+
+.farm_container{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.connect_button{
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: rgb(170, 137, 41);
+    border: 0px;
+    border-radius: 16px;
+    box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px inset;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    width: max-content;
+    height: 32px;
+    line-height: 1;
+    letter-spacing: 0.03em;
+    -webkit-box-pack: center;
+    justify-content: center;
+    outline: 0px;
+    padding: 0px 16px;
+    transition: background-color 0.2s ease 0s;
+    opacity: 1;
+    }
+
+nav{
+  position: fixed;
+    top: 0px;
+    left: 0px;
+    transition: top 0.2s ease 0s;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-left: 8px;
+    padding-right: 16px;
+    width: 100%;
+    height: 64px;
+    background-color: white;
+    border-bottom: 2px solid rgba(133, 133, 133, 0.1);
+    z-index: 20;
+    transform: translate3d(0px, 0px, 0px);
+    }
+
+.active_div{
+  background-color: rgb(238, 234, 244);
+    border-radius: 16px;
+    display: inline-flex;
+    margin-left: 1.5em
+}
+
+.active{
+  -webkit-box-align: center;
+    align-items: center;
+    background-color: rgb(143, 128, 186);
+    border: 0px;
+    border-radius: 16px;
+    box-shadow: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    width: max-content;
+    height: 32px;
+    line-height: 1;
+    letter-spacing: 0.03em;
+    -webkit-box-pack: center;
+    justify-content: center;
+    outline: 0px;
+    padding: 0px 16px;
+    transition: background-color 0.2s ease 0s;
+    opacity: 1;
+}
+
+.inactive{
+  -webkit-box-align: center;
+    align-items: center;
+    background-color: rgb(239, 244, 245);
+    border: 0px;
+    border-radius: 16px;
+    box-shadow: none;
+    color: rgb(170, 137, 41);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    width: max-content;
+    height: 32px;
+    line-height: 1;
+    letter-spacing: 0.03em;
+    -webkit-box-pack: center;
+    justify-content: center;
+    outline: 0px;
+    padding: 0px 16px;
+    transition: background-color 0.2s ease 0s;
+    opacity: 1;
+    background-color: transparent;
+    color: rgb(143, 128, 186);
 }
 
 .App-link {
