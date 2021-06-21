@@ -95,7 +95,7 @@ export default function Chart() {
                         <div color="text" class="sc-gsTCUz info_row_a">$0</div>
                     </div>
                     <div class="sc-eCssSg FgqtZ">
-                        <a target="_blank" rel="noreferrer noopener" href="https://bscscan.com/token/0x19e7cbecdd23a16dfa5573df54d98f7caae03019" color="primary" class="scan">View on BscScan</a>
+                        <a target="_blank" rel="noreferrer noopener" href="https://bscscan.com/token/0x19e7cbecdd23a16dfa5573df54d98f7caae03019" color="primary" class="scan">View on Etherscan</a>
                     </div>
                 </div>
             </div>
