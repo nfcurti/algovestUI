@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body, html{
 font-family: 'Kanit', sans-serif !important;
+
 }
 .App {
   text-align: center;
+  background-color: rgb(250, 249, 250);
 }
 
 .App-logo {
@@ -173,7 +175,7 @@ font-family: 'Kanit', sans-serif !important;
     left: -2px;
     z-index: -1;
     background: linear-gradient(45deg, rgb(255, 0, 0) 0%, rgb(255, 154, 0) 10%, rgb(208, 222, 33) 20%, rgb(79, 220, 74) 30%, rgb(63, 218, 216) 40%, rgb(47, 201, 226) 50%, rgb(28, 127, 238) 60%, rgb(95, 21, 242) 70%, rgb(186, 12, 248) 80%, rgb(251, 7, 217) 90%, rgb(255, 0, 0) 100%) 0% 0% / 300% 300%;
-    animation: 2s linear 0s infinite normal none running ilqnTz;
+    animation: 2s linear 0s infinite normal none running ilqnTz !important;
     border-radius: 16px;
 }
 
@@ -528,4 +530,115 @@ nav{
   to {
     transform: rotate(360deg);
   }
+}
+
+.iizEdg {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.eHffeS {
+    background-color: rgb(255, 255, 255);
+    border-radius: 32px;
+    box-shadow: rgb(25 19 38 / 10%) 0px 2px 12px -8px, rgb(25 19 38 / 5%) 0px 1px 1px;
+    color: rgb(69, 42, 122);
+    overflow: hidden;
+    position: relative;
+
+}
+
+.eHffeS {
+    background-color: rgb(255, 255, 255);
+    border-radius: 32px;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 32px;
+    border-bottom-left-radius: 32px;
+    box-shadow: rgb(25 19 38 / 10%) 0px 2px 12px -8px, rgb(25 19 38 / 5%) 0px 1px 1px;
+    color: rgb(69, 42, 122);
+    overflow: hidden;
+    position: relative;
+}
+
+.ezBjmy {
+    padding: 24px;
+}
+
+.eyMhHH {
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    font-size: 14px;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.eyrSnX {
+    font-size: 40px !important;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+.bbSIME {
+    color: rgb(69, 42, 122);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+.kxDGqL {
+    color: rgb(69, 42, 122);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.kxDFDt {
+    color: rgb(69, 42, 122);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.iMDoIO {
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    justify-content: stretch;
+    margin-bottom: 48px;
+    margin-top: 2em !important
+}
+
+.eFBfDe {
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    flex: 1 1 0%;
+        margin-left: auto;
+    margin-right: auto;
+}
+
+.ezBjmy {
+    padding: 24px;
+}
+
+.gOjCDZ {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+.diGZoE {
+    color: rgb(69, 42, 122);
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.eugENQ {
+    color: rgb(143, 128, 186);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
 }
