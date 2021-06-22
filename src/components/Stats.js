@@ -56,7 +56,7 @@ export default class Stats extends React.Component {
                   <div class="sc-crrsfI eHffeS sc-ljRboo eFBfDe col-4" >
                       <div class="sc-dQppl ezBjmy">
                           <h2 color="text" class="sc-gsTCUz sc-idOhPF bbSIME gOjCDZ">Total Value Locked (TVL)</h2>
-                          <div font-size="40px" color="text" class="sc-gsTCUz diGZoE">$26,166,705.74</div>
+                          <div font-size="40px" color="text" class="sc-gsTCUz diGZoE">$0</div>
                           <div color="textSubtle" class="sc-gsTCUz eugENQ">Across all Farms and Nests and Layers</div>
                       </div>
                   </div>
