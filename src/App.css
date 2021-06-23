@@ -8,6 +8,10 @@ font-family: 'Kanit', sans-serif !important;
   background-color: rgb(250, 249, 250);
 }
 
+button:hover{
+    opacity: 0.8 !important
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
