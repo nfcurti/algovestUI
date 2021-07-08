@@ -58,9 +58,6 @@ export default class Chart extends React.Component {
                       </svg>
                       No Fees
                     </div>
-                    <div class="multiplier">
-                      60X
-                    </div>
                   </div>
                 </div>
                 </div>
