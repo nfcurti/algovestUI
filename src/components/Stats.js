@@ -69,7 +69,7 @@ export default class Stats extends React.Component {
                   <div class="sc-crrsfI eHffeS sc-ljRboo eFBfDe col-4" >
                       <div class="sc-dQppl ezBjmy">
                           <h2 color="text" class="sc-gsTCUz sc-idOhPF bbSIME gOjCDZ">Total Value Locked (TVL)</h2>
-                          <div font-size="40px" color="text" class="sc-gsTCUz diGZoE">${this.state.totalLocked.toLocaleString()}</div>
+                          <div font-size="40px" color="text" class="sc-gsTCUz diGZoE">${this.state.totalLocked.toFixed(2)}</div>
                           <div color="textSubtle" class="sc-gsTCUz eugENQ">Across all of your farms</div>
                       </div>
                   </div>
