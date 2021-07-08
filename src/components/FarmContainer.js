@@ -10,7 +10,6 @@ export default function Chart() {
     return (
       <div class="farm_container">
         
-        <FarmBox />
         <Farm2 />
         <Farm3 />
       </div>

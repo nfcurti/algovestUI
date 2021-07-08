@@ -1,6 +1,7 @@
 import React from "react";
 import Web3 from 'web3'
 import detectEthereumProvider from '@metamask/detect-provider';
+import sushiData from '@sushiswap/sushi-data'
 
 export default class Stats extends React.Component {
   state = {
@@ -10,7 +11,7 @@ export default class Stats extends React.Component {
     totalBurned:0,
     totalSupply:0,
     grailPerBlock:0,
-
+    totalLocked:0
   }
 
    async componentDidMount(){
@@ -20,14 +21,21 @@ export default class Stats extends React.Component {
     const totalSupply = await grailContract.methods.totalSupply().call();
     const totalBurnt = await masterchefContract.methods.tokensBurned().call();
     const grailPerBlock = await masterchefContract.methods.grailPerBlock().call();
+    const priceToken = await sushiData.exchange.token24h({token_address:'0x54cc8f6f1540714788c6ec3593597ebd4dd9fff2'})
+    const LPTrack = await sushiData.exchange.pairs({pair_addresses:['0xaab3cd27375bd8f46b2081a2ff6346f485e32f6d','0x154da9488291e7b682cf892e5b5471c20566f39b']})
+    const eth_price = await sushiData.exchange.ethPrice({})
+    var totalLocked = 0
+    var i=0
+    for (i in LPTrack)
+      totalLocked = totalLocked+LPTrack[i].reserveUSD
+
     this.setState({
-      totalMinted: (totalSupply/1000000000000000000).toLocaleString(), 
+      totalMinted: (totalSupply/1000000000000000000).toLocaleString(),
+      marketCap: (priceToken.priceUSD*(totalSupply/1000000000000000000)).toLocaleString(), 
       totalSupply: (totalSupply/1000000000000000000-this.state.totalBurned).toLocaleString(), 
       grailPerBlock: grailPerBlock/1000000000000000000,
-      totalBurned:totalBurnt/1000000000000000000})
-    
-
-
+      totalBurned:totalBurnt/1000000000000000000,
+      totalLocked: totalLocked})
   }
 
   render() {return (
@@ -61,8 +69,8 @@ export default class Stats extends React.Component {
                   <div class="sc-crrsfI eHffeS sc-ljRboo eFBfDe col-4" >
                       <div class="sc-dQppl ezBjmy">
                           <h2 color="text" class="sc-gsTCUz sc-idOhPF bbSIME gOjCDZ">Total Value Locked (TVL)</h2>
-                          <div font-size="40px" color="text" class="sc-gsTCUz diGZoE">$0</div>
-                          <div color="textSubtle" class="sc-gsTCUz eugENQ">Across all Farms and Nests and Layers</div>
+                          <div font-size="40px" color="text" class="sc-gsTCUz diGZoE">${this.state.totalLocked}</div>
+                          <div color="textSubtle" class="sc-gsTCUz eugENQ">Across all of your farms</div>
                       </div>
                   </div>
               </div>
